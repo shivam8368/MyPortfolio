@@ -1,0 +1,359 @@
+*
+{
+    padding:0;
+    margin:0;
+    color:#fff;
+}
+
+.container
+{
+    margin-bottom: 80px;
+}
+
+.main
+{
+    background: url(../images/p3.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+h1 {
+    color:#FF0077;
+}
+
+.img-thumbnail
+{
+    background-color: #FF0077;
+    border:0;
+}
+
+
+
+.heading
+{
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+
+.main-content
+{
+    padding-left: 30px;
+    background: rgba(17, 17, 17, 0.7);
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.content
+{
+    padding-top:30px;
+}
+
+.btn-tag
+{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.tech-buttons
+{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.main-buttons
+{
+    margin-top:20px;
+    
+}
+
+.btn-website
+{
+    margin-left: 65px;
+}
+
+.img-feild1
+{
+    margin-top: 80px;
+}
+
+.img-heading1
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.imageContainer  img {
+    transition:transform 0.25s ease;
+    z-index: 1;
+    display: absolute;
+}
+
+.imageContainer img:hover {
+    -webkit-transform:scale(1.25); /* or some other value */
+    transform:scale(1.25);
+    z-index: 2;
+}
+
+@media only screen and (max-width:768px) {
+	.main-buttons
+    {
+    margin-top:20px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    
+    }
+
+    .btn-tag
+    {
+        margin-top:10px;
+    }
+
+    .imageContainer  img {
+    transition: none;
+    z-index: 1;
+    display: absolute;
+    margin-top: 40px;
+}
+
+  .imageContainer img:hover {
+    -webkit-transform:scale(1); /* or some other value */
+    transform:scale(1);
+    z-index: 2;
+   }
+}
+
+
+@media only screen and (max-width:400px) {
+	.main-buttons
+    {
+    margin-top:20px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    
+    }
+
+   .btn-tag
+    {
+        margin-top:10px;
+    }
+
+    .imageContainer  img {
+    transition: none;
+    z-index: 1;
+    display: absolute;
+    margin-top: 40px;
+}
+  .imageContainer img:hover {
+    -webkit-transform:scale(1); /* or some other value */
+    transform:scale(1);
+    z-index: 2;
+   }
+	
+}
+
+/* main button */
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+#container2
+{
+    margin-left: 20px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.learn-more {
+  width: 12rem;
+  height: auto;
+}
+.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(17, 17, 17, 0.7);
+  border-radius: 1.625rem;
+}
+.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+@supports (display: grid) {
+ 
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+
+
+/* main button */
+
+
+
+
+
+
+/* tech-buttons */
+
+.pure-material-button-outlined {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.24);
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    background-color: transparent;
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.pure-material-button-outlined::-moz-focus-inner {
+    border: none;
+}
+
+/* Overlay */
+.pure-material-button-outlined::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Ripple */
+.pure-material-button-outlined::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: currentColor;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1) ;
+    transition: opacity 1s, transform 0.5s;
+}
+
+/* Hover, Focus */
+.pure-material-button-outlined:hover::before {
+    opacity: 0.04;
+}
+
+.pure-material-button-outlined:focus::before {
+    opacity: 0.12;
+}
+
+.pure-material-button-outlined:hover:focus::before {
+    opacity: 0.16;
+}
+
+/* Active */
+.pure-material-button-outlined:active::after {
+    opacity: 0.16;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+/* Disabled */
+.pure-material-button-outlined:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: transparent;
+    cursor: initial;
+}
+
+.pure-material-button-outlined:disabled::before {
+    opacity: 0;
+}
+
+.pure-material-button-outlined:disabled::after {
+    opacity: 0;
+}
+
+
+/* tech-buttons */

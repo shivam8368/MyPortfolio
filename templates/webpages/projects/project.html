@@ -1,0 +1,168 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+    <link rel="stylesheet" href="{% static './css/project.css' %}">
+
+
+
+  
+    <title>Hello, world!</title>
+</head>
+
+<body class="main">
+
+
+    <div class="heading">
+        <h1>Project 1</h1>
+    </div>
+
+
+    
+<div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row img-row">
+        <div class="col-sm-12 col-md-4">
+        <img src="{{project.project_main_image.url}}" class="img-thumbnail main-image" alt="code image">
+            <div class="main-buttons">
+
+
+                
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div id="container1">
+                            <button class="learn-more" onclick="location.href='{{project.project_url}}';">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Website</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div id="container2">
+                            <button class="learn-more" onclick="location.href='{{project.project_github_url}}'; ">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Github</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-sm-12 col-md-8 main-content">
+            
+            <div class="content">
+                <p class="disk-1">{{project.detail_discription}}</p>
+            </div>
+
+            <div class="btn-tag">
+                <h4>Tech Used</h4>
+            </div>
+
+            <div class="tech-buttons">
+                <button class="pure-material-button-outlined">{{project.tech_used_one}}</button>
+                <button class="pure-material-button-outlined">{{project.tech_used_two}}</button>
+                <button class="pure-material-button-outlined">{{project.tech_used_three}}</button>
+                <button class="pure-material-button-outlined">{{project.tech_used_four}}</button>
+                <button class="pure-material-button-outlined">{{project.tech_used_five}}</button>
+                <button class="pure-material-button-outlined">{{project.tech_used_six}}</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="img-feild1">
+        <div class="img-heading1">
+            <h2>Image-heading 1</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="imageContainer">
+                    <img src="{{project.project_ss_one.url}}" alt="..." class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="imageContainer">
+                    <img src="{{project.project_ss_two.url}}" alt="..." class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+            <div class="imageContainer">
+                <img src="{{project.project_ss_three.url}}" alt="..." class="img-thumbnail">
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="img-feild1">
+        <div class="img-heading1">
+            <h2>Image-heading 1</h2>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="imageContainer">
+                    <img src="{{project.project_ss_four.url}}" alt="..." class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="imageContainer">
+                    <img src="{{project.project_ss_five.url}}" alt="..." class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+            <div class="imageContainer">
+                <img src="{{project.project_ss_six.url}}" alt="..." class="img-thumbnail">
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="{% static 'project.js' %}"></script>
+</body>
+
+</html>
