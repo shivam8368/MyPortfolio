@@ -137,7 +137,7 @@ STATICFILES_DIRS =  [
     os.path.join(BASE_DIR, 'myPortfolio/static')
 ]
 
-
+SITE_ID = 1
 
 AWS_ACCESS_KEY_ID = 'AKIAWYPWD3IODYHPIJNA'
 AWS_SECRET_ACCESS_KEY = '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'
