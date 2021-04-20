@@ -1,9 +1,6 @@
 /**
  * =================================================================== 
  *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
  *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
@@ -652,7 +649,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "poppins-regular", sans-serif;
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;

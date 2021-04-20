@@ -21,6 +21,14 @@
                         <span>A Full-Stack Web Developer</span>
                         
                     </p>
+                    <a style="margin-right: 20px; border: none;  font-weight:20px" class="button stroke " href="{% url 'about' %}"
+                        title="">
+                        More <span style="color: aliceblue; font-size: 20px; text-transform: lowercase; "> About Me</span>
+                    </a>
+                    <a style="margin-right: 20px; border: none" class="button stroke " href="{% url 'portfolio' %}" title="">
+                        View<span style="color: aliceblue; font-size: 20px;text-transform: lowercase;"> My Works</span></a>
+                    <a style="border: none" class="button stroke "  href="https://drive.google.com/file/d/1V9CmeWd8QcNgKGexKw4f5YZi-hjavQyY/view?usp=sharing"  title="">
+                        see<span style="color: aliceblue;  font-size: 20px; text-transform: lowercase;"> my resume</span></a>
 
                 </div>
     
@@ -29,53 +37,7 @@
     
             </div>
 
-            <div class="wrapper">
-
-               <a href="https://github.com/shivam8368">  
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <span>Github</span>
-                    </div>
-                </a>
-
-                <a href="https://www.linkedin.com/in/shivam-kushwaha-a4762b198/">
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                        <span>LinkedIn</span>
-                    </div>
-                </a>
-
-                <a href="{% url 'portfolio' %}">
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <span>Portfolio</span>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="button">
-                        <div class="icon">
-                            <i class="far fa-file-pdf"></i>
-                        </div>
-                        <span>Resume</span>
-                    </div>
-                </a>
-
-                <a href="{% url 'about' %}">
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fas fa-user-astronaut"></i>
-                        </div>
-                        <span>About Me</span>
-                    </div>
-                </a>
-            </div>
+            
 
         
     </section>
