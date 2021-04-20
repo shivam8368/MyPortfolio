@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
+
+SECRET_KEY = config('SECRET_KEY')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'vqa7ea3^y)u$yvkr3uw^pquq6(lmm$-i+g&6x&$d)&(-^+0u^n'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -139,8 +142,8 @@ STATICFILES_DIRS =  [
 
 SITE_ID = 1
 
-AWS_ACCESS_KEY_ID = 'AKIAWYPWD3IOMBP4E2TN'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID =config('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'my-port-bucket'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
