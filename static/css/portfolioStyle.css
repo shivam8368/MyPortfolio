@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-body{
-	font-family: 'Lora', serif;
-}
+
 
 .slick-dots li button:before
 {
@@ -118,7 +117,8 @@ body{
 	background: #ffffff;
 	color: #0c002b;
 	text-decoration: none;
- 	letter-spacing: 0;
+	text-transform: uppercase;
+	letter-spacing: 0;
 	font-weight: 600;
 }
 .card span
@@ -229,13 +229,13 @@ body{
 }
 @media only screen and (max-width:768px) {
 	.container .card{
-		margin-left:70px;
+		margin-left:5px;
 	}
 	
 }
 @media only screen and (max-width:600px) {
 	.container .card{
-		margin-left:70px;
+		margin-left:5px;
 	}
 
 }
