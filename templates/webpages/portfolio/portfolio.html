@@ -1,0 +1,64 @@
+{% extends '../../base.html' %}
+
+
+
+{% block content %}
+
+<section id="portfolio">
+    <div class="port-overlay"></div>
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <a class="back-button" href="{% url 'home' %}" style=" color: #fff;"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+            </a>
+
+            <h5 style="margin-top:30px;">Portfolio</h5>
+            <h1 style="color: white ;">Check Out Some of My Works.</h1>
+
+
+        </div>
+    </div> <!-- /section-intro-->
+
+    <div class="row services-content">
+
+        <div id="owl-slider" class="owl-carousel services-list">
+            {% for project in projects %}
+            <div class="services">
+                <div class="container ">
+                    <div class="card ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <h1>01</h1>
+                            <h3>{{project.name}}</h3>
+                            <p class = "button stroke" style="color: aliceblue;  font-size: 20px; text-transform: lowercase; border: none;">{{project.discription}}</p>
+                            <a  href="{% url 'project' project.id %}">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+
+
+
+</section> <!-- /portfolio -->
+
+
+
+
+
+
+
+{% endblock %}

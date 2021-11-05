@@ -1,0 +1,64 @@
+{% extends '../../base.html' %}
+
+
+
+{% block content %}
+
+<section id="main">
+
+    <div class="intro-overlay"></div>
+
+    <div class="project-content">
+        <div class="row">
+
+            <div class="col-twelve">
+
+                <a class="back-button" href="{% url 'portfolio' %}" style=" color: #fff; margin-bottom: 20px;"><i class="fas fa-times"></i>
+                </a>
+
+                <h5>{{project.name}}</h5>
+                
+                <img src="{{project.project_main_image.url}}" class="img-thumbnail main-image" alt="code image">
+                 <br>
+               
+                <a style="margin-right: 20px; border: none;  font-weight:20px" class="button stroke "
+                    href="{{project.project_url}}" title="">
+                    Visit<span style="color: aliceblue; font-size: 20px; text-transform: lowercase; "> This Project</span>
+                </a>
+                
+                <a style="border: none" class="button stroke "
+                    href="{{project.project_github_url}}" title="">
+                    see<span style="color: aliceblue;  font-size: 20px; text-transform: lowercase;"> github repo.</span></a>
+
+
+                <div class="about">
+                    <h5 style="text-transform: capitalize;">About</h5>
+                    <h3 class =  "button stroke" style="color: aliceblue;  font-size: 20px; text-transform: lowercase; border: none;">{{project.detail_discription}}</h3>
+                </div>
+
+
+                <div class="about">
+                    <h5 style="text-transform: capitalize;">Tech. Used</h5>
+                    
+                        <a class="button btn btn-outline-secondary">{{project.tech_used_one}}</a>
+                        <a class="btn btn-outline-secondary button">{{project.tech_used_two}}</a>
+                        <a class="btn btn-outline-secondary button">{{project.tech_used_three}}</a>
+                        <a class="button btn btn-outline-secondary">{{project.tech_used_four}}</a>
+                        <a class="button btn btn-outline-secondary">{{project.tech_used_five}}</a>
+                    
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+</section>
+
+
+{% endblock %}

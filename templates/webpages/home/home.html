@@ -1,0 +1,46 @@
+
+{% extends '../../base.html' %}
+
+
+
+{% block content %}
+
+    <section id="intro">
+    
+        <div class="intro-overlay"></div>
+    
+        <div class="intro-content">
+            <div class="row">
+    
+                <div class="col-twelve">
+    
+                    <h5>Hello, World.</h5>
+                    <h1>I'm Shivam Kushwaha.</h1>
+    
+                    <p class="intro-position">
+                        <span>A Full-Stack Web Developer</span>
+                        
+                    </p>
+                    <a style="margin-right: 20px; border: none;  font-weight:20px" class="button stroke " href="{% url 'about' %}"
+                        title="">
+                        More <span style="color: aliceblue; font-size: 20px; text-transform: lowercase; "> About Me</span>
+                    </a>
+                    <a style="margin-right: 20px; border: none" class="button stroke " href="{% url 'portfolio' %}" title="">
+                        View<span style="color: aliceblue; font-size: 20px;text-transform: lowercase;"> My Works</span></a>
+                    <a style="border: none" class="button stroke "  href="https://drive.google.com/file/d/1V9CmeWd8QcNgKGexKw4f5YZi-hjavQyY/view?usp=sharing"  title="">
+                        see<span style="color: aliceblue;  font-size: 20px; text-transform: lowercase;"> my resume</span></a>
+
+                </div>
+    
+                           
+                
+    
+            </div>
+
+            
+
+        
+    </section>
+    
+
+{% endblock %}
